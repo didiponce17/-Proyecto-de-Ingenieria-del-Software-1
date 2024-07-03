@@ -1,0 +1,27 @@
+<script src="/js/templates/superior.js"></script>
+
+<div class="PerfilVendedor">
+
+    <div class="perfil-vendedor">
+        <h1 id="TituloPerfilVendedor">
+            <strong>Datos de Vendedor </strong>
+        </h1><br>
+
+        <img id="fotoPerfilVendedor" src="/img/user.png" alt="Foto Perfil Vendedor" />
+    </div>
+
+    <div class="datos-perfilvendedor">
+        <p>Los campos con asterisco (*) son obligatorios.</p>
+        <input type="text" name="Nombre" placeholder="Nombre*" required />
+        <input type="text" name="PrimerApellido" placeholder="Primer Apellido*" required />
+        <input type="text" name="SegundoApellido" placeholder="Segundo Apellido*" required />
+        <input type="number" name="Identificacion" placeholder="No. de Identificacion*" required />
+        <input type="email" name="CorreoElectronico" placeholder="Correo Electrónico*" required />
+        <input type="tel" name="Telefono" placeholder="No. de Teléfono (Opcional)" />
+        <p>Fotografía (Opcional)</p>
+        <input type="file" name="Fotografia" accept="image/jpeg" placeholder="Fotografía (Opcional)"/>
+        <input type="submit" value="Guardar" class="BotonGuardarPerfilVendedor" />
+    </div>
+</div>
+
+<script src="/js/templates/inferior.js"></script>

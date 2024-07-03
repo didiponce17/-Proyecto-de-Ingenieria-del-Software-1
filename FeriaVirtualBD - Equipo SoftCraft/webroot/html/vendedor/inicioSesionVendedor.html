@@ -1,0 +1,34 @@
+<script src="/js/templates/superior.js"></script>
+
+    <script src="/js/vendedor/inicioSesionVendedor.js"></script>
+    
+    <div class="contenedorinicioSesionVendedor">
+        <section>
+            <img src="/img/user.png">
+            <h2>Inicio de sesión <br> Vendedor</h2>
+        </section>
+        
+        <aside>
+            <div class="contenedorFormInicioSesionVendedor">
+                <form id="formularioInicioSesionVendedor">
+
+                    <label class="label">ID</label><br>
+                    <input name="_idVend" id="idVendedor" type="number" min="0" maxlength="12" oninput="limiteDigitos(this)" placeholder="  Identificación"/>
+                    <br>
+                    
+                    <span id="validarIDvend" class="requerido">*Introduzca un ID</span>
+                    <br><br>
+                    
+                    <label class="label">Contraseña</label><br>
+                    <input type="password" name="contraseVend" id="contraseVendedor" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="  Su contraseña"/>
+                    <br>
+
+                    <span id="validarContrVendedor" class="requerido">*Introduzca una contraseña válida</span>
+                    <br><br>
+
+                    <input type="button" name="btnGuardar" id="botonIniciarSesionVendedor" value="Iniciar Sesión" class="btnIniciarSesion">
+                </form>
+            </div>
+        </aside>
+    </div>
+<script src="/js/templates/inferior.js"></script>

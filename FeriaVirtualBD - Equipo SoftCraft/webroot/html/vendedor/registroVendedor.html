@@ -1,0 +1,65 @@
+<script src="/js/templates/superior.js"></script>
+
+<script src="/js/vendedor/registroVendedor.js"></script>
+
+    <div class="contenedorRegistroVendedor">
+        <section>
+            <img src="/img/user.png">
+            <h2>Registro de vendedor</h2>
+            <br><br><br>
+            <p>Al enviar la solicitud de registro de vendedor,<br>usted acepta los términos y condiciones de la página.<br><br>
+                Su solicitud será revisada en un plazo de 24 horas.<br>Un correo con la resolución le será enviado.</p>
+        </section>
+
+        <aside>
+            <div class="contenedorformularioVendedor">
+                <form id="formularioVendedor">
+
+                    <label class="label">ID</label>
+                    <select id="tipoPasaporte">
+                        <option>Cédula costarricense</option>
+                        <option>Pasaporte</option>
+                        <option>DIMEX</option>
+                    </select>
+                    <input name="_idVend" id="idVendedor" type="number" min="0" maxlength="12" oninput="limiteDigitos(this)" placeholder="Identificación"/>
+                    <br>
+                    <span id="validarIDvend" class="requerido">*Introduzca un ID</span>
+                    <br>
+
+                    <input type="text" name="nombreVend" id="nombreVendedor" placeholder="Su nombre" onkeypress="soloLetras(event)" title="Solo letras" />
+                    <br>
+                    <span id="validarNombreVend" class="requerido">*nombre requerido</span>
+                    <br>
+
+                    <input type="text" name="primerApellidoVend" id="primerApellidoVendedor" placeholder="Su primer apellido" onkeypress="soloLetras(event)" title="Solo letras" />
+                    <br>
+                    <span id="validarPrimeApellidoVend" class="requerido">*primer apellido requerido</span>
+                    <br>
+                
+                    <input type="text" name="seguApellidoVend" id="seguApellidoVendedor" placeholder="Su segundo apellido" onkeypress="soloLetras(event)" title="Solo letras" />
+                    <br>
+                    <span id="validarSeguApellidoVend" class="requerido">*primer apellido requerido</span>
+                    <br>
+                    
+                    <input type="email" name="correoVend" id="correoVendedor" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Su correo electrónico"/>
+                    <br>
+                    <span id="validarCorreoVend" class="requerido">*correo electronico requerido</span>
+                    <br>
+
+                    <input type="text" name="tramoVend" id="tramoVendedor" placeholder="Nombre de su tienda"/>
+                    <br>
+                    <span id="validarTramoVend" class="requerido">*Nombre de Tienda requerido</span>
+                    <br>
+
+                    <input pdf="imagen" type="file" id="subirArchivo" title="Suba su permiso municipal aquí" />
+                    <br>
+                    <span id="validarPermiso" class="requerido">*Permiso municipal requerido</span>
+                    <br>
+
+                    <input type="button" name="btnRegistrarVendedor" class="botonRegistrarVendedor" value="Guardar">
+                </form>
+            </div>
+        </aside>
+    </div>
+    
+<script src="/js/templates/inferior.js"></script>

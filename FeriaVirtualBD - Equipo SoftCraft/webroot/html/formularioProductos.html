@@ -1,0 +1,77 @@
+<script src="/js/templates/superior.js"></script>
+<script src="/js/productos.js"></script>
+
+        <div class="contenido">
+
+            <div class="contenedorFormulario">
+
+                <h1>Productos</h1>
+
+                <hr>
+
+                <form>
+                    <label>Id:</label>
+                    <input type="text" name="_id" placeholder="Autogenerado" readonly="readonly">
+
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <span id="validarNombre">*Espacio requerido</span>
+
+                    <label>Cantidad:</label>
+                    <input type="text" name="cantidad" placeholder="Cantidad"
+                        onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+                    <span id="validarCantidad">*Solo numeros válidos</span>
+
+                    <label>Precio:</label>
+                    <input type="text" name="precio" placeholder="Precio"
+                        onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+                    <span id="validarPrecio">*Solo precios válidos</span>
+
+                    <input type="button" id="btnGuardarProductos" value="Guardar">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="inventario-productosvendedor">
+            <h3 id="TituloProductosVendedor">
+              <strong>Productos </strong>
+            </h3>
+          
+            <div class="lista-productosvendedor">
+              <div class="item-producto">
+                <input type="checkbox" class="producto-checkbox" />
+                <img src="/img/aguacate.png" alt="Aguacate" />
+                <p>Aguacate</p>
+              </div>
+              <div class="item-producto">
+                <input type="checkbox" class="producto-checkbox" />
+                <img src="/img/pescado.png" alt="Pescado" />
+                <p>Pescado</p>
+              </div>
+              <div class="item-producto">
+                <input type="checkbox" class="producto-checkbox" />
+                <img src="/img/carne.png" alt="Carne" />
+                <p>Carne</p>
+              </div>
+              <div class="item-producto">
+                <input type="checkbox" class="producto-checkbox" />
+                <img src="/img/manzana.png" alt="Manzana" />
+                <p>Manzana</p>
+              </div>
+              <div class="item-producto">
+                <input type="checkbox" class="producto-checkbox" />
+                <img src="/img/atun.png" alt="Atun" />
+                <p>Atun</p>
+              </div>
+            </div>
+          
+            <div class="BotonEliminarProductoVendedor">
+              <input type="submit" value="Eliminar" />
+            </div>
+          </div>
+        
+<script src="/js/templates/inferior.js"></script>

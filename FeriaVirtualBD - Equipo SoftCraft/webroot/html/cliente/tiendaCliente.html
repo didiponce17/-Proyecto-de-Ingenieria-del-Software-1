@@ -1,0 +1,66 @@
+<script src="/js/templates/superior.js"></script>
+
+    <div class="bannerCliente">
+        <img id="fondoCliente" src="/img/bannerTienda.png" alt="fondoCliente" />
+        <img id="logoTienda" src="/img/superverde.png" alt="Tienda" />
+        <h1>
+        ¡Bienvenidos a Super Verde! <br /><br />¿Buscas calidad y frescura en
+        tus vegetales? <br />¡Has llegado al lugar indicado! En Frescura Natural
+        nos enorgullece ofrecerte <br />los mejores productos de la tierra,
+        directamente del campo a tu mesa.
+        </h1>
+    </div>
+
+    <div class="tienda-cliente">
+        <h2 id="TituloCliente">
+        <strong>Contáctanos</strong>
+        </h2>
+
+        <p1 id="Descripcion">
+            <br />Si tienes alguna pregunta o comentario, no dudes en comunicarte
+            con nosotros. Estamos aquí para ayudarte.<br />
+            <br />Teléfono: +506 1234 6789 <br />Correo electrónico:
+            info@superverde.com
+        </p1>
+
+        <div class="calificacion-estrellas">
+            <form action="/submit-rating" method="post">
+                <p2 id="TituloCalificacion">
+                <br />Calificación<br/>
+                </p2>
+        
+                <div class="star-rating">
+                    <input type="radio" id="5-stars" name="rating" value="5" /><label for="5-stars">&#9733;</label>
+                    <input type="radio" id="4-stars" name="rating" value="4" /><label for="4-stars">&#9733;</label>
+                    <input type="radio" id="3-stars" name="rating" value="3" /><label for="3-stars">&#9733;</label>
+                    <input type="radio" id="2-stars" name="rating" value="2" /><label for="2-stars">&#9733;</label>
+                    <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star">&#9733;</label>
+                </div>
+
+                <div class="comentario-cliente">
+                    <label for="comment">Déjanos tus comentarios <br></label>
+                    <textarea id="comment" name="comment" rows="5" cols="105"></textarea>
+                </div>
+
+                <div class="boton-adjuntar">
+                    <label for="file-upload">Adjuntar Archivo</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/*,video/*">
+                </div>
+
+                <div class="BotonAgregar">
+                    <input type="submit" value="Agregar">
+                </div>
+            </form>
+        </div>
+
+        <div class="BotonResena">
+            <a class="BtnResena">
+                <h3>
+                ¡Estamos ansiosos por escucharte! Por favor, califica tu experiencia
+                con nuestros productos. <br>¡Gracias por tu apoyo!
+                </h3>
+            </a>
+        </div>
+    </div>
+
+<script src="/js/templates/inferior.js"></script>

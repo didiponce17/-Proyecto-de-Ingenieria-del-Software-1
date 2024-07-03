@@ -1,0 +1,44 @@
+<body>
+    <script src="/js/templates/superior.js"></script>
+
+    <div class="contDireccion">
+        <div class="agregarDireccion">
+            <h1>Agregar dirección</h1>
+            <hr>
+            <h3>Seleccione el tipo de dirección</h3>
+            <i class="fa-solid fa-house-user"></i>
+        </div>
+        
+        <form id="infodireccion">
+    
+            <input type="text" id="campoDireccion" placeholder="Introduzca su dirección exacta"/>
+            <br>
+            <select class="provincia">
+                <option>Heredia</option>
+                <option>San José</option>
+                <option>Cartago</option>
+                <option>Alajuela</option>
+                <option>Puntarenas</option>
+                <option>Guanacaste</option>
+                <option>Limón</option>
+            </select>
+            <br>
+            
+            <input type="text" class="canton" placeholder="Cantón"/>
+            <br>
+            
+            <input type="text" class="distrito" placeholder="Distrito"/>
+    
+    
+            <p class="disclaimer">
+            Al agregar esta dirección, usted se compromete a aceptar los términos y condiciones.
+            </p>
+    
+            <input type="button" id="guardarDireccion" value="Guardar" class="boton">
+        </form>
+
+    </div>
+    
+    <script src="/js/templates/inferior.js"></script>
+
+</body>

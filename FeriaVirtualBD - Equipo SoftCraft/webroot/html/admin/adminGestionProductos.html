@@ -1,0 +1,61 @@
+<script src="/js/templates/superior.js"></script>
+
+<!-- INVENTARIO Admin -->
+
+<div class="inventario-productosadmin">
+  <h3 id="TituloProductosAdministrador">
+    <strong>Gestion de Productos</strong>
+  </h3>
+  <div class="productoadmin-drop-categorias">
+    <label for="TituloProductoAdminCategorias">Categorias</label>
+    <select name="admindropCategorias" id="Categorias">
+      <option value="1">Frutas</option>
+      <option value="2">Vegetales</option>
+      <option value="3">Carnes</option>
+      <option value="3">Mariscos</option>
+    </select>
+  </div>
+
+  <div class="productoadmin-drop-tramo">
+    <label for="TituloProductoAdminTramo">Tramo</label>
+    <select name="admindropTramo" id="Tramo">
+      <option value="1">Vendedor A</option>
+      <option value="2">Vendedor B</option>
+      <option value="3">Vendedor C</option>
+    </select>
+  </div>
+
+  <div class="lista-productosadmin">
+    <div class="item-productoadmin">
+      <input type="checkbox" class="productoadmin-checkbox" />
+      <img src="/img/aguacate.png" alt="Aguacate" />
+      <p>Aguacate</p>
+    </div>
+    <div class="item-productoadmin">
+      <input type="checkbox" class="productoadmin-checkbox" />
+      <img src="/img/pescado.png" alt="Pescado" />
+      <p>Pescado</p>
+    </div>
+    <div class="item-productoadmin">
+      <input type="checkbox" class="productoadmin-checkbox" />
+      <img src="/img/carne.png" alt="Carne" />
+      <p>Carne</p>
+    </div>
+    <div class="item-productoadmin">
+      <input type="checkbox" class="productoadmin-checkbox" />
+      <img src="/img/manzana.png" alt="Manzana" />
+      <p>Manzana</p>
+    </div>
+    <div class="item-productoadmin">
+      <input type="checkbox" class="productoadmin-checkbox" />
+      <img src="/img/atun.png" alt="Atun" />
+      <p>Atun</p>
+    </div>
+  </div>
+
+  <div class="BotonEliminarProductoAdministrador">
+    <input type="submit" value="Eliminar" />
+  </div>
+</div>
+
+<script src="/js/templates/inferior.js"></script>

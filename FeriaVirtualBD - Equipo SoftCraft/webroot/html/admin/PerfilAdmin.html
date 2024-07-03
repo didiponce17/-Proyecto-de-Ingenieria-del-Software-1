@@ -1,0 +1,25 @@
+<script src="/js/templates/superior.js"></script>
+
+<body>
+    <div class="PerfilAdmin">
+        <div class="DireccionAdmin">
+            <img src="/img/user.png" alt="User">
+            <h3>Mi Perfil <br><br>Dirección</h3><br>
+            <a id="BtnGuardarPerfilAdmin" href="/html/admin/agregarDireccion.html">Agregar</a> <!--Agregar link a Direcciones-->
+        </div>
+        <div class="DatosAdmin">
+            <p>Los campos con asterisco (*) son obligatorios.</p>
+            <input type="text" name="Nombre" required placeholder="Nombre*" >
+            <input type="text" name="PrimerApellido" required placeholder="Primer Apellido*" >
+            <input type="text" name="SegundoApellido" placeholder="Segundo Apellido">
+            <input type="number" name="Identificacion" required placeholder="No. de Identificación*" >
+            <input type="email" name="CorreoElectronico" required placeholder="Correo Electrónico*" >
+            <input type="tel" name="Telefono" placeholder="No. de Teléfono (Opcional)">
+            <p>Fotografía (Opcional)</p>
+            <input type="file"  name="Fotografia" accept="image/jpeg" placeholder="Fotografía (Opcional)">
+            <input type="submit" value="Guardar">
+        </div>
+    </div>
+</body>
+
+<script src="/js/templates/inferior.js"></script>

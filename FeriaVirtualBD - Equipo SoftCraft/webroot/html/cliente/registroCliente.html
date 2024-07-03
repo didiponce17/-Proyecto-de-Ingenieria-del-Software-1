@@ -1,0 +1,59 @@
+<script src="/js/templates/superior.js"></script>
+
+<script src="/js/cliente/registroCliente.js"></script>
+
+    <div class="contenedorRegistroCliente">
+        <section>
+            <img src="/img/user.png">
+            <h2>Registro de cliente</h2>
+            <br><br><br>
+            <p>Al crear la cuenta,<br>usted acepta los términos
+                y condiciones de la página. </p>
+        </section>
+
+        <aside>
+            <div class="contenedorformularioCliente">
+                <form id="formularioCliente">
+
+                    <label class="label">ID</label>
+                    <select id="tipoPasaporte">
+                        <option>Cédula costarricense</option>
+                        <option>Pasaporte</option>
+                        <option>DIMEX</option>
+                    </select>
+                    <input name="_idCliente" id="idClient" type="number" min="0" maxlength="12" oninput="limiteDigitos(this)" placeholder="Identificación"/>
+                    <br>
+
+                    <span id="validarIDcliente" class="requerido">*ID requerido</span>
+                    <br><br>
+
+                    <input type="text" name="nombreCliente" id="nombreClient" placeholder="Su nombre" onkeypress="soloLetras(event)" title="Solo letras" />
+                    <br>
+
+                    <span id="validarNombreCliente" class="requerido">*nombre requerido</span>
+                    <br><br>
+
+                    <input type="text" name="primerApellidoCliente" id="primerApellidoClient" placeholder="Su primer apellido" onkeypress="soloLetras(event)" title="Solo letras" />
+                    <br>
+
+                    <span id="validarPrimeApellidoCliente" class="requerido">*primer apellido requerido</span>
+                    <br><br>
+
+                    <input type="text" name="seguApellidoCliente" id="seguApellidoClient" placeholder="Su segundo apellido" title="Solo letras" onkeypress="soloLetras(event)" />
+                    <br>
+
+                    <span id="validarSeguApellidoCliente" class="requerido">*primer apellido requerido</span>
+                    <br><br>
+
+                    <input type="email" name="correoCliente" id="correoClient" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Su correo electrónico"/>
+                    <br>
+
+                    <span id="validarCorreoCliente" class="requerido">*correo electronico requerido</span>
+                    <br><br>
+
+                    <input type="button" name="btnGuardar" class="botonRegistrarCliente" value="Guardar">
+                </form>
+            </div>
+        </aside>
+    </div>
+<script src="/js/templates/inferior.js"></script>

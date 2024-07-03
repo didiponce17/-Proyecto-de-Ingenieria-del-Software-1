@@ -1,0 +1,26 @@
+<body>
+
+    <script src="/js/templates/superior.js"></script>
+
+    <div class="DatosTarjeta">
+        <h1>Agregar Método de Pago</h1>
+        <form action="/api/guardardatos" method="POST">
+            <label class="number-namecard" for="number">Número de tarjeta</label><br>
+            <input type="text" id="cardnumber" name="number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19"  required><br>
+            <label class="number-namecard" for="name">Titular de la tarjeta</label><br>
+            <input type="text" id="cardname" name="name" placeholder="Nombre de la tarjeta" required><br>
+            <label for="expiration">Vencimiento</label>
+            <input type="text" id="cardexpiration" name="expiration"  placeholder="MMAA"  inputmode="numeric" maxlength="5" required>
+            <label for="cvc">CVC/CVV</label>
+            <input type="text" id="cardcvc" name="cvc" maxlength="3" placeholder="123" required>
+            <h2>Al registrar el siguiente método de pago, usted acepta los términos y condiciones de la página</h2>
+            <input type="submit" id="AgregarTarjeta" name="AgregarTarjeta" value="Agregar Tarjeta">
+        </form>
+    </div>
+    
+    <script src="/js/cliente/MetodoPago.js" defer></script>
+    <script src="/js/templates/inferior.js"></script>
+
+
+</body>
+

@@ -1,0 +1,98 @@
+<script src="/js/templates/superior.js"></script>
+<script src="/js/producto/registroProducto.js"></script>
+<div class="agregar-productosvendedor">
+  <form id="formularioProducto">
+  <div class="gestor-productosvendedor">
+
+    <h1 id="TituloAgregarProductoVendedor">
+      <strong>Agregar Producto</strong>
+    </h1>
+    <img
+      id="fotoProductoVendedorAgregar"
+      src="/img/fotoagregarProducto.png"
+      alt="Foto Producto Vendedor"
+    />
+
+    <div class="datos-agregarproductovendedor">
+      <input
+        type="text"
+        name="NombreProducto"
+        id="nombreProducto"
+        required
+        placeholder="Nombre de Producto"
+      />
+      <span id="validarNombreProducto" class="requerido">*Nombre requerido</span>
+      <br>
+      <input type="text" name="Categoria" required placeholder="Categoria" 
+      id="categoriaProducto"/>
+      <span id="validarCategoriaProducto" class="requerido">*Categoria requerida</span>
+      <br>
+      <input type="text" name="Precio" required placeholder="Precio"
+      id="precioProducto" />
+      <span id="validarPrecioProducto" class="requerido">*Precio requerido</span>
+      <br>
+      <input
+        type="number"
+        name="Inventario"
+        required
+        placeholder="Inventario"
+        id="inventarioProducto"
+      />
+      <span id="validarInventarioProducto" class="requerido">*Inventario requerido</span>
+      <br>
+      <input
+        type="file"
+        name="Fotografia"
+        accept="image/*"
+        placeholder="Fotografía (Opcional)"
+        id="imagenProducto"
+      />
+    </div>
+    <div class="BotonAgregarProductoVendedor">
+      <input type="button" value="Agregar" id="botonRegistrarProducto" />
+    </div>
+    </div>
+  </form>
+</div>
+
+<!-- INVENTARIO  -->
+
+<div class="inventario-productosvendedor">
+  <h3 id="TituloProductosVendedor">
+    <strong>Productos </strong>
+  </h3>
+
+  <div class="lista-productosvendedor">
+    <div class="item-producto">
+      <input type="checkbox" class="producto-checkbox" />
+      <img src="/img/aguacate.png" alt="Aguacate" />
+      <p>Aguacate</p>
+    </div>
+    <div class="item-producto">
+      <input type="checkbox" class="producto-checkbox" />
+      <img src="/img/pescado.png" alt="Pescado" />
+      <p>Pescado</p>
+    </div>
+    <div class="item-producto">
+      <input type="checkbox" class="producto-checkbox" />
+      <img src="/img/carne.png" alt="Carne" />
+      <p>Carne</p>
+    </div>
+    <div class="item-producto">
+      <input type="checkbox" class="producto-checkbox" />
+      <img src="/img/manzana.png" alt="Manzana" />
+      <p>Manzana</p>
+    </div>
+    <div class="item-producto">
+      <input type="checkbox" class="producto-checkbox" />
+      <img src="/img/atun.png" alt="Atun" />
+      <p>Atun</p>
+    </div>
+  </div>
+
+  <div class="BotonEliminarProductoVendedor">
+    <input type="submit" value="Eliminar" />
+  </div>
+</div>
+
+<script src="/js/templates/inferior.js"></script>

@@ -1,0 +1,35 @@
+<script src="/js/templates/superior.js"></script>
+
+<script src="/js/admin/inicioSesionAdmin.js"></script>
+
+    <div class="contenedorInicioSesionAdmin">
+        <section>
+            <img src="/img/user.png">
+            <h2>Inicio de sesión <br> Administrador</h2>
+        </section>
+
+        <aside>
+            <div class="contenedorFormInicioSesionAdmin">
+                <form id="formularioInicioSesionAdmin">
+
+                    <label class="label">ID</label><br>
+                    <input name="_idAdmin" id="idAdmin" type="number" min="0" maxlength="12" oninput="limiteDigitos(this)" placeholder="  Identificación"/>
+                    <br>
+                    
+                    <span id="validarIDadmin" class="requerido">*Introduzca un ID válido</span>
+                    <br><br>
+                    
+                    <label class="label">Contraseña</label><br>
+                    <input type="password" name="contrasenaAdmin" id="contraseAdmin" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="  Su contraseña"/>
+                    <br>
+                    
+                    <span id="validarContrAdmin" class="requerido">*contraseña inválida</span>
+                    <br><br>
+                    
+                    <!--#btnSiguiente o #botonIniciarSesionAdmin en CSS-->
+                    <input type="button" name="btnGuardar" id="botonIniciarSesionAdmin" value="Iniciar Sesión" class="btnIniciarSesion">
+                </form>
+            </div>
+        </aside>
+    </div>
+<script src="/js/templates/inferior.js"></script>

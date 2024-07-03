@@ -1,0 +1,36 @@
+<script src="/js/templates/superior.js"></script>
+<script src="/js/cliente/reporteCliente.js"></script>
+
+<div class="cliente-reportes">
+  <h1 id="TituloReporteCompra">
+    <strong>Reporte de Compras</strong>
+  </h1>
+
+  <div class="drop-fechainicial">
+    <label for="inputFechaInicial">Fecha Inicial:</label>
+    <input
+      type="date"
+      name="fechaInicial"
+      id="inputFechaInicial"
+      onchange="rangoFechas()"
+      required
+    />
+  </div>
+
+  <div class="drop-fechafinal">
+    <label for="inputFechaFinal">Fecha Final: </label>
+    <input
+      type="date"
+      name="fechaFinal"
+      id="inputFechaFinal"
+      onchange="rangoFechas()"
+      required
+    />
+  </div>
+
+  <button id="BotonGenerar" onclick="generarReporte()">Generar</button>
+
+  <div id="reporte-cliente"></div>
+  <button id="BotonDescargar" onclick="descargarCSV()">Descargar</button>
+</div>
+<script src="/js/templates/inferior.js"></script>
